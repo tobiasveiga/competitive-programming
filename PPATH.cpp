@@ -20,10 +20,10 @@ ACCEPTED
 
 i32 T, cost;
 std::string source, dest;
-bool isPrime[9999];
+bool isPrime[10'000];
 std::unordered_map<std::string, std::vector<std::string>> edges;
 std::unordered_set<std::string> visited;
-std::string queue[9999];
+std::string queue[10'000];
 bool impossible;
 
 void computeIsPrime() {
@@ -37,7 +37,7 @@ void computeIsPrime() {
 }
 void computeEdges() {
   const i32 N = 10'000;
-  for (i32 i = 1000; i < 10000 - 1; i++) { // -1 fixes bug at SPOJ
+  for (i32 i = 1000; i < N; i++) {
     if (isPrime[i]) {
       std::string i_string = std::to_string(i);
       for (i32 j = 0; j < 4; j++) {

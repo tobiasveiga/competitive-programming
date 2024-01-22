@@ -58,8 +58,8 @@ int main() {
   while (t--) {
     std::cin >> n;
     cnt = 0;
-    memset(str_end, 0, sizeof(bool) * (n * 10 + 1));
-    memset(c, 0, sizeof(i32) * (n * 10 + 1) * 10);
+    memset(str_end, 0, sizeof(bool) * (n * 11 + 1));
+    memset(c, 0, sizeof(i32) * (n * 11 + 1) * 10);
     for (i32 i = 0; i < n; i++)
       std::cin >> input[i];
     solve();

@@ -10,7 +10,7 @@ range
 - A full block increment means p is updated to the previous value
 - A partial increment update the input array and the block cnt array
 - A full block query returns cnt[p]
-- A partial query returns a linear time search in the block for %p==0 numbers
+- A partial query returns a linear time search in the block for %3==p numbers
 
 ACCEPTED
 */
